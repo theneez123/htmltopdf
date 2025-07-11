@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://htmltopdf-b7ag.onrender.com",
+    origin: "https://htmltopdf-wine.vercel.app",
     methods: ["POST"],
     allowedHeaders: ["Content-Type"],
   })

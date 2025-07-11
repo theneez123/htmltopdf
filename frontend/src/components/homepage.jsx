@@ -20,13 +20,16 @@ function Homepage() {
     setLoading(true);
     const interval = handleProgress();
     try {
-      const response = await fetch("http://localhost:5000/api/generatepdf", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://htmltopdf-b7ag.onrender.com/api/generatepdf",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) throw new Error("Failed to generate PDF");
 
@@ -53,13 +56,16 @@ function Homepage() {
     setLoading(true);
     const interval = handleProgress();
     try {
-      const response = await fetch("http://localhost:5000/api/preview", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://htmltopdf-b7ag.onrender.com/api/preview",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) throw new Error("Failed to generate preview");
 

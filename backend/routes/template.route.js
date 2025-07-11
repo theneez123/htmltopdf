@@ -50,7 +50,7 @@ router.post("/preview", async (req, res) => {
     template = template.replace("{{message}}", message || "");
 
     template += `
-      <form method="POST" action="http://localhost:5000/api/generatepdf" style="text-align:center; margin-top:40px;" target="_blank">
+      <form method="POST" action="https://htmltopdf-b7ag.onrender.com/api/generatepdf" style="text-align:center; margin-top:40px;" target="_blank">
         <input type="hidden" name="name" value="${(name || "Unknown").replace(
           /"/g,
           "&quot;"
