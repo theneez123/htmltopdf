@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Date of Birth Certificate</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f2fdf2;
+        color: #333;
+        margin: 0;
+        padding: 40px;
+      }
+
+      .certificate-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 40px;
+        border: 2px solid #28a745;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .logo {
+        font-size: 36px;
+        font-weight: bold;
+        color: #28a745;
+        letter-spacing: 2px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: #666;
+        margin-top: 5px;
+      }
+
+      h1.title {
+        text-align: center;
+        font-size: 28px;
+        margin: 30px 0 10px;
+        color: #222;
+        text-transform: uppercase;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 10px;
+      }
+
+      .field-group {
+        margin: 20px 0;
+        font-size: 16px;
+      }
+
+      .field-label {
+        font-weight: bold;
+        color: #555;
+      }
+
+      .field-value {
+        margin-left: 10px;
+        color: #000;
+      }
+
+      .message-box {
+        margin-top: 30px;
+        background-color: #f0fdf4;
+        border-left: 5px solid #28a745;
+        padding: 20px;
+        font-style: italic;
+        font-size: 15px;
+        color: #333;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: pre-wrap;
+      }
+
+      .signature {
+        text-align: right;
+        margin-top: 60px;
+        font-size: 14px;
+        color: #444;
+      }
+
+      .signature .name {
+        font-weight: bold;
+        color: #000;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 12px;
+        color: #aaa;
+        margin-top: 40px;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="certificate-container">
+      <header>
+        <div class="logo">Zen</div>
+        <div class="subtitle">Official Date of Birth Certificate</div>
+      </header>
+
+      <h1 class="title">Certificate of Birth</h1>
+
+      <div class="field-group">
+        <span class="field-label">Name:</span>
+        <span class="field-value">{{name}}</span>
+      </div>
+
+      <div class="field-group">
+        <span class="field-label">Date of Birth:</span>
+        <span class="field-value">{{date}}</span>
+      </div>
+
+      <div class="message-box">{{message}}</div>
+
+      <footer>&copy; 2025 Zen. All rights reserved.</footer>
+    </div>
+  </body>
+</html>
